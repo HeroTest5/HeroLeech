@@ -67,6 +67,9 @@ def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton("Repo", "https://www.github.com/anasty17/mirror-leech-telegram-bot")
     buttons.buildbutton("Owner", "https://www.github.com/anasty17")
+    buttons.buildbutton("GDrive Access", "https://groups.google.com/g/heroleech")
+    buttons.buildbutton("GDrive Index", "https://gdrive1.herobenhero.workers.dev/")
+    buttons.buildbutton("GDrive", "https://drive.google.com/drive/u/0/folders/0ABXqX5_j5hvMUk9PVA")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
